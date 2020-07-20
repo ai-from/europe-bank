@@ -1,6 +1,22 @@
 .indent
     padding: 0 48px
-
+html, body
+  background: $dark
 .all
   display: grid
-  grid-template-columns: min-content 1fr
+  grid-template-columns: 1fr
+  &.menu
+    grid-template-columns: min-content 1fr
+    header
+      .three
+        display: none
+      .two
+        display: block
+    .left-menu
+      display: block
+  .content
+    display: grid
+    .wrapper
+      width: 100%
+      max-width: 1180px
+      margin: 0 auto
