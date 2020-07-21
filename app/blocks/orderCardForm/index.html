@@ -7,8 +7,8 @@
     <div class="wrap">
       <div class="field">
         <div class="cnt">
-          <div class="label">ФИО</div>
           <input type="text">
+          <div class="label" @click="labelClick">ФИО</div>
         </div> <!-- cnt -->
         <div class="message">Некорректно введены данные</div>
       </div> <!-- field -->
@@ -21,8 +21,8 @@
     <div class="wrap">
       <div class="field">
         <div class="cnt">
-          <div class="label">Электронный адрес</div>
           <input type="text">
+          <div class="label" @click="labelClick">Электронный адрес</div>
         </div> <!-- cnt -->
         <div class="message">Некорректно введены данные</div>
       </div> <!-- field -->
@@ -35,8 +35,8 @@
     <div class="wrap">
       <div class="field">
         <div class="cnt">
-          <div class="label">Номер телефона</div>
           <input type="text">
+          <div class="label" @click="labelClick">Номер телефона</div>
         </div> <!-- cnt -->
         <div class="message">Некорректно введены данные</div>
       </div> <!-- field -->
@@ -49,9 +49,9 @@
     <div class="wrap">
       <div class="field">
         <div class="cnt">
-          <div class="label">Гражданство</div>
-          <img class="dropdown-icon" src="../../assets/img/orderCardForm/dropdown.svg" alt="" title="">
           <input type="text">
+          <div class="label" @click="labelClick">Гражданство</div>
+          <img class="dropdown-icon" src="../../assets/img/orderCardForm/dropdown.svg" alt="" title="">
         </div> <!-- cnt -->
         <div class="dropdown">
           <div class="item">Российская Федерация</div>

@@ -7,6 +7,9 @@ var orderCard = new Vue({
     closeForm(){
       document.querySelector('.all .content').style.display = 'block'
       document.querySelector('.order-card-form').classList.remove('show')
+    },
+    labelClick(e){
+      e.target.previousElementSibling.focus()
     }
   }
 })
