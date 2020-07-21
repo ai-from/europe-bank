@@ -14,5 +14,5 @@ $('a[href^="#"]').on('click', function(){
 $('.orderCard').on('click', function(){
     $('.all').removeClass('menu')
     $('.all .content').hide()
-    $('.order-card-form').show()
+    $('.order-card-form').addClass('show')
 })
