@@ -34,6 +34,7 @@ html, body
     .pluses
       .items
         grid-template-columns: repeat(2, min-content)
+        justify-content: space-around
     .getting
       .items
         grid-template-columns: repeat(2, min-content)
@@ -42,7 +43,7 @@ html, body
     .order-card
       .wrapper
         .items
-          grid-template-columns: repeat(2, min-content)
+          grid-gap: 30px
         .blocks .right-part
           padding-left: 50px
     footer .wrapper
@@ -68,9 +69,11 @@ html, body
   &.brown
     background: $brown
     &:hover
-      background: $brown_dark
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #C0965C
     &:active
       background: $grey_dark
+    &:disabled
+      background: rgba($white, .1)
 
 .block-title
   font-family: Geometria, Arial, sans-serif

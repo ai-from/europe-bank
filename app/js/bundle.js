@@ -10,5 +10,6 @@ $(document).ready(function(){
 	// //= services/nicescroll_settings.js
 
   //= ../blocks/orderCard/order-card.js
+  //= ../blocks/orderCardForm/order-card-form.js
 
 });

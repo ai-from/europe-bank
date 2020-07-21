@@ -9,3 +9,10 @@ $('a[href^="#"]').on('click', function(){
     $('html').animate({scrollTop: $(el).offset().top}, 2000);
     return false;
 });
+
+// orderCard click
+$('.orderCard').on('click', function(){
+    $('.all').removeClass('menu')
+    $('.all .content').hide()
+    $('.order-card-form').show()
+})
