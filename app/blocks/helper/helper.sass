@@ -1,0 +1,46 @@
+.helper
+  background: url('../../assets/img/card/lines-bg.svg') center center no-repeat
+  background-size: contain
+  padding-bottom: 180px
+  overflow: hidden
+  .wrapper
+    .block-title
+      margin-bottom: 15px
+    .desc
+      font-family: Geometria, Arial, sans-serif
+      font-size: 14px
+      line-height: 18px
+      color: $white
+      text-align: center
+      margin-bottom: 60px
+      span
+        color: $brown
+    .blocks
+      display: grid
+      grid-template-columns: 50% 50%
+      position: relative
+      .left-part
+        display: grid
+        justify-content: end
+      .right-part
+        padding-left: 150px
+        display: grid
+        align-content: center
+        .item
+          display: grid
+          grid-template-columns: min-content 200px
+          align-items: center
+          grid-gap: 18px
+          margin-bottom: 60px
+          &:last-child
+            margin-bottom: 0
+          .text
+            font-family: Geometria, Arial, sans-serif
+            font-size: 14px
+            line-height: 20px
+            color: $white
+      img.black
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        bottom: -160px
