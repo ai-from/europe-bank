@@ -4,9 +4,10 @@ $('.burger').on('click', function(){
 })
 
 // scrolling to
-$('a[href^="#"]').on('click', function(){
+$('nav a[href^="#"]').on('click', function(){
     var el = $(this).attr('href');
     $('html').animate({scrollTop: $(el).offset().top}, 2000);
+    $('.burger').click()
     return false;
 });
 
