@@ -7,15 +7,17 @@ html, body
   display: grid
   grid-template-columns: 1fr
   .wrapper
-    padding-left: 200px
-    padding-right: 200px
+    padding-left: 100px
+    padding-right: 100px
     &.header
-      padding-left: 100px
-      padding-right: 100px
+      padding-left: 0
+      padding-right: 0
   &.menu
     grid-template-columns: min-content 1fr
     header
       .wrapper
+        padding-left: 50px
+        padding-right: 50px
         .three
           display: none
         .two
@@ -26,6 +28,9 @@ html, body
       position: static
       display: block
       margin-top: 30px
+    .pluses
+      .items
+        grid-template-columns: repeat(2, min-content)
   .content
     display: grid
     grid-template-rows: min-content
@@ -49,3 +54,10 @@ html, body
       background: $brown_dark
     &:active
       background: $grey_dark
+
+.block-title
+  font-family: Geometria, Arial, sans-serif
+  font-size: 30px
+  line-height: 38px
+  color: $white
+  text-align: center
