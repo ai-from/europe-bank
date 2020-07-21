@@ -1,6 +1,7 @@
 .order-card-form
   display: none
   &.show
+    height: 100%
     display: grid
     grid-template-columns: 50% 50%
   form
@@ -133,7 +134,14 @@
           color: $white
   .order-result
     width: min-content
+    height: 100vh
+    margin: auto
     padding: 25px
+    display: grid
+    grid-column: 1/3
+    align-content: center
+    &.show
+      display: grid
     .icon
       display: grid
       margin: 0 auto
