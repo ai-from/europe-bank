@@ -9,4 +9,6 @@ $(document).ready(function(){
 	// //= services/styler_settings.js
 	// //= services/nicescroll_settings.js
 
+  //= ../blocks/orderCard/order-card.js
+
 });

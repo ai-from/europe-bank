@@ -1,0 +1,73 @@
+.order-card
+  padding-bottom: 75px
+  .wrapper
+    .block-title
+      margin-bottom: 50px
+    .items
+      display: grid
+      grid-template-columns: repeat(3, min-content)
+      grid-gap: 110px
+      justify-content: space-between
+      margin-bottom: 90px
+      .item
+        width: 255px
+        .title
+          font-family: Geometria, Arial, sans-serif
+          font-size: 36px
+          font-weight: bold
+          color: $brown
+          margin-bottom: 20px
+        .text
+          font-family: Geometria, Arial, sans-serif
+          font-size: 14px
+          font-weight: bold
+          color: $grey
+
+    .blocks
+      display: grid
+      grid-template-columns: 50% 50%
+      .left-part
+        display: grid
+        justify-content: end
+        img
+          max-width: 100%
+      .right-part
+        padding-left: 100px
+        .cards
+          display: grid
+          grid-template-columns: repeat(2, min-content)
+          grid-gap: 40px
+          margin-bottom: 50px
+          div
+            white-space: nowrap
+            cursor: pointer
+            font-family: Geometria, Arial, sans-serif
+            font-size: 18px
+            color: $grey
+            &.active
+              color: $brown-light
+        .btn.brown
+          padding-left: 65px
+          padding-right: 65px
+          margin-bottom: 50px
+        .table
+          margin-bottom: 30px
+          .tr
+            display: grid
+            grid-template-columns: 50% 50%
+            grid-gap: 25px
+            margin-bottom: 10px
+            .td
+              font-family: Geometria, Arial, sans-serif
+              font-size: 14px
+              &:first-child
+                color: $grey
+              &:last-child
+                color: $grey_light
+        a.details
+          color: $brown
+          width: min-content
+          border-bottom: 1px dashed $grey
+          &:hover
+            color: $grey
+

@@ -7,13 +7,16 @@ html, body
   display: grid
   grid-template-columns: 1fr
   .wrapper
-    padding-left: 100px
-    padding-right: 100px
+    padding-left: 50px
+    padding-right: 50px
     &.header
       padding-left: 0
       padding-right: 0
   &.menu
     grid-template-columns: min-content 1fr
+    .wrapper
+      padding-left: 100px
+      padding-right: 100px
     header
       .wrapper
         padding-left: 50px
@@ -35,7 +38,13 @@ html, body
       .items
         grid-template-columns: repeat(2, min-content)
     .helper .wrapper .blocks .right-part
-      padding-left: 50px
+      padding-left: 30px
+    .order-card
+      .wrapper
+        .items
+          grid-template-columns: repeat(2, min-content)
+        .blocks .right-part
+          padding-left: 50px
   .content
     display: grid
     grid-template-rows: min-content
@@ -53,6 +62,7 @@ html, body
   font-size: 24px
   color: $white
   border: none
+  white-space: nowrap
   &.brown
     background: $brown
     &:hover
