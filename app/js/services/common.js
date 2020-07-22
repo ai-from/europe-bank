@@ -6,8 +6,8 @@ $('.burger').on('click', function(){
 // scrolling to
 $('nav a[href^="#"]').on('click', function(){
     var el = $(this).attr('href');
-    $('html').animate({scrollTop: $(el).offset().top}, 2000);
     $('.burger').click()
+    $('html').animate({scrollTop: $(el).offset().top}, 2000);
     return false;
 });
 

@@ -4,11 +4,6 @@
 $(document).ready(function(){
 
 	//= services/common.js
-	// //= services/dotdotdot_settings.js
-	// //= services/slick_settings.js
-	// //= services/styler_settings.js
-	// //= services/nicescroll_settings.js
-
   //= ../blocks/orderCard/order-card.js
   //= ../blocks/orderCardForm/order-card-form.js
 
