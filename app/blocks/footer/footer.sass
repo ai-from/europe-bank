@@ -44,3 +44,32 @@ footer
             font-size: 24px
             margin-bottom: 35px
             color: $grey_light
+
+@media screen and (max-width: 1099px)
+  footer
+    .wrapper
+      grid-template-columns: 1fr min-content
+      grid-gap: 40px
+      .center-part
+        padding: 0
+
+@media screen and (max-width: 849px)
+  footer
+    .wrapper
+      grid-template-columns: 1fr
+
+@media screen and (max-width: 767px)
+  footer
+    padding-bottom: 15px
+    .wrapper
+      .left-part
+        img
+          width: 200px
+
+@media screen and (max-width: 499px)
+  footer
+    padding-top: 100px
+    .wrapper
+      .center-part
+        grid-template-columns: 1fr
+        grid-gap: 0
