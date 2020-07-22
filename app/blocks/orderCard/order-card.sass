@@ -71,3 +71,61 @@
           &:hover
             color: $grey
 
+@media screen and (max-width: 1099px)
+  .order-card
+    .wrapper
+      .items
+        grid-template-columns: repeat(2, min-content)
+        grid-gap: 50px
+        justify-content: space-around
+        .item
+          width: 200px
+          br
+            display: none
+      .blocks
+        grid-template-columns: 1fr
+        grid-row-gap: 40px
+        .left-part
+          justify-content: left
+        .right-part
+          padding-left: 0
+          .table
+            width: 50%
+
+@media screen and (max-width: 767px)
+  .order-card
+    .wrapper
+      .blocks
+        .right-part
+          .table
+            width: 100%
+
+@media screen and (max-width: 499px)
+  .order-card
+    .wrapper
+      .items
+        grid-template-columns: 1fr
+        justify-items: center
+        text-align: center
+      .blocks
+        .left-part
+          img
+            width: 100%
+        .right-part
+          .table
+            .tr
+              grid-template-columns: 1fr
+              grid-template-rows: repeat(2, min-content)
+              grid-gap: 5px
+              margin-bottom: 30px
+
+@media screen and (max-width: 399px)
+  .order-card
+    .wrapper
+      .blocks
+        .right-part
+          .cards
+            grid-template-columns: 1fr
+            grid-gap: 20px
+            div
+              width: min-content
