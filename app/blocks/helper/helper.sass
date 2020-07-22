@@ -44,3 +44,39 @@
         left: 50%
         transform: translateX(-50%)
         bottom: -160px
+
+@media screen and (max-width: 999px)
+  .helper
+    .wrapper
+      .blocks
+        .right-part
+          padding-left: 50px
+
+@media screen and (max-width: 767px)
+  .helper
+    padding-bottom: 100px
+    .wrapper
+      .block-title
+        margin-bottom: 5px
+      .desc
+        font-size: 13px
+      .blocks
+        grid-template-columns: 1fr
+        .left-part, .black
+          display: none
+        .right-part
+          grid-template-columns: repeat(2, min-content)
+          grid-gap: 50px
+          padding-left: 0
+          justify-content: space-around
+          .item
+            margin-bottom: 0
+            align-items: start
+
+@media screen and (max-width: 649px)
+  .helper
+    .wrapper
+      .blocks
+        .right-part
+          grid-template-columns: 1fr
+          justify-items: center
