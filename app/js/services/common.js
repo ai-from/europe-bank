@@ -18,3 +18,11 @@ $('.orderCard').on('click', function(){
     $('.order-card-form').addClass('show')
     $('html, body').animate({scrollTop: 0}, 0)
 })
+
+// remove class 'menu'
+$(window).on('resize', function(){
+    let width = screen.width
+    if (width < 1300) {
+        $('.all').removeClass('menu')
+    }
+})
