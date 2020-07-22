@@ -23,6 +23,9 @@ var orderCard = new Vue({
     labelClick(e){
       e.target.previousElementSibling.focus()
     },
+    dropdownIconClick(e){
+      e.target.previousElementSibling.click()
+    },
     checkboxClick(){
       this.checkbox = !this.checkbox
     },
