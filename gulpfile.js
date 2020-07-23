@@ -148,3 +148,8 @@ gulp.task('go', gulp.series('clean', gulp.parallel(
     'doc',
     'browser-sync',
     'watch')));
+
+gulp.task('deploy', function(){
+    return gulp.src('dist/**/*')
+    .pipe(gulp.dest('europe-bank'));
+});
