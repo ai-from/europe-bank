@@ -1,9 +1,0 @@
-node_modules/
-.idea/
-dist/
-
-app/
-.gitignore/
-gulpfile.js/
-package.json/
-package-lock.json/
