@@ -31,7 +31,7 @@ const path = {
 gulp.task('browser-sync', function(){
     browserSync({
         server:{
-            baseDir: 'dist'
+            baseDir: 'europe-bank'
         },
         notify: false
     });
@@ -39,7 +39,7 @@ gulp.task('browser-sync', function(){
 
 // clean
 gulp.task('clean', function(){
-    return del('dist');
+    return del('europe-bank');
 });
 
 
@@ -53,7 +53,7 @@ gulp.task('html', function(){
     return gulp.src(path.html)
     .pipe(rigger())
     .pipe(include())
-    .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest('europe-bank'))
     .pipe(browserSync.reload({stream: true}));
 });
 
@@ -67,7 +67,7 @@ gulp.task('sass', function(){
         'ie 8',
         'ie 7'],
         {cascade: true}))
-    .pipe(gulp.dest('dist/css'))
+    .pipe(gulp.dest('europe-bank/css'))
     .pipe(browserSync.reload({stream: true}));
 });
 
@@ -76,7 +76,7 @@ gulp.task('css_libs', function(){
     return gulp.src(path.css_libs)
     .pipe(importCss())
     .pipe(cleanCss())
-    .pipe(gulp.dest('dist/css'))
+    .pipe(gulp.dest('europe-bank/css'))
     .pipe(browserSync.reload({stream: true}));
 });
 
@@ -85,7 +85,7 @@ gulp.task('css_libs', function(){
 gulp.task('script', function(){
     return gulp.src(path.script)
     .pipe(rigger())
-    .pipe(gulp.dest('dist/js'))
+    .pipe(gulp.dest('europe-bank/js'))
     .pipe(browserSync.reload({stream: true}));
 });
 
@@ -93,14 +93,14 @@ gulp.task('script', function(){
 gulp.task('script_libs', function(){
     return gulp.src(path.script_libs)
     .pipe(rigger())
-    .pipe(gulp.dest('dist/js'))
+    .pipe(gulp.dest('europe-bank/js'))
     .pipe(browserSync.reload({stream: true}));
 });
 
 // font
 gulp.task('font', function(){
     return gulp.src(path.font)
-        .pipe(gulp.dest('dist/assets/fonts'));
+        .pipe(gulp.dest('europe-bank/assets/fonts'));
 });
 
 
@@ -113,19 +113,19 @@ gulp.task('img', function(){
         svgoPlugins: [{removeViewBox: false}],
         use: [pngquant()]
     })))
-    .pipe(gulp.dest('dist/assets/img'));
+    .pipe(gulp.dest('europe-bank/assets/img'));
 });
 
 // favicon
 gulp.task('favicon', function(){
     return gulp.src(path.favicon)
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest('europe-bank'));
 });
 
 // doc
 gulp.task('doc', function(){
     return gulp.src(path.doc)
-    .pipe(gulp.dest('dist/assets/doc'));
+    .pipe(gulp.dest('europe-bank/assets/doc'));
 });
 
 // watch
